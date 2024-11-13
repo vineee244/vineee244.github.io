@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    margin: 0;
+    scrollbar-width: none;
+    background: linear-gradient(to bottom, rgb(135, 11, 250), rgb(184, 96, 246));
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 50vw;
+    height: 45vh;
+    background-color: rgb(23, 19, 68);
+    border-radius: 32px;
+    text-align: center;
+}
+
+.botoes {
+    display: flex; /* Alinha os botões em linha horizontal */
+    justify-content: space-between; /* Espaço entre os botões */
+    align-items: center; /* Alinha verticalmente os botões */
+    gap: 10px; /* Adiciona um espaçamento de 10px entre os botões */
+    margin-top: 20px; /* Adiciona uma margem no topo */
+}
+
+.siteTw, .stream, .curioso {
+    border: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    width: 130px;
+    height: 30px;
+    cursor: pointer;
+    transition: 500ms;
+    text-decoration: none; /* Retira o sublinhado dos links */
+}
+
+.siteTw a, .stream a, .curioso a {
+    text-decoration: none; /* Retira o sublinhado especificamente dos links dentro dos botões */
+    color: inherit; /* Garante que a cor do texto seja herdada do botão */
+}
+
+.stream:hover {
+    background-color: rgb(255, 215, 0);
+}
+
+.curioso:hover {
+    background-color: rgb(255, 215, 0);
+}
+
+.siteTw:hover{
+    background-color: rgb(255, 215, 0);
+}
+.curioso:active {
+    transition: 500ms;
+}
+.historiaa{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 50vw;
+    height: 60vh;
+    background-color: rgb(23, 19, 68);
+    border-radius: 32px;
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.yts{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 50vw;
+    height: 170vh;
+    background: linear-gradient(to bottom, rgb(23, 19, 68), rgb(122, 65, 163));
+    border-radius: 32px;
+    text-align: center;
+}
+.facts{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 50vw;
+    height: 35vh;
+    background-color: rgb(122, 65, 163);
+    border-radius: 32px;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.priva{
+    display: flex;
+    flex-direction: column;
+    white-space: normal;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 16px;
+    width: 10vw;
+    height: 35vh;
+    background-color: rgb(194, 108, 255);
+    border-radius: 32px;
+    text-align: center;
+}
+.logo,.casimito,.gauless,.alanzokaa{
+    border-radius: 12px;
+}
