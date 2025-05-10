@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Minha Querida Mãe ❤️</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/timeline.css">
+  <link rel="stylesheet" href="styles/gallery.css">
+  <link rel="stylesheet" href="styles/animations.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hearts-container"></div>
+  
+  <div class="audio-control">
+    <button id="toggleAudio" aria-label="Tocar música de fundo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sound-on"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sound-off hidden"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+    </button>
+  </div>
+
+  <main>
+    <section id="intro" class="section">
+      <div class="content fade-in">
+        <h1>Para a Melhor Mãe do Mundo</h1>
+        <div class="intro-message">
+          <p>Querida mãe,</p>
+          <p>Este é um pequeno presente digital para expressar todo o amor e gratidão que sinto por você. Por todas as vezes que me acalentou, me guiou e me amou incondicionalmente.</p>
+          <p>Cada momento ao seu lado é um tesouro guardado no meu coração.</p>
+          <p class="signature">Com todo meu amor,</p>
+          <p class="signature">Seu filho(a)</p>
+        </div>
+        <button class="btn-next" data-next="timeline">Continuar</button>
+      </div>
+    </section>
+
+    <section id="timeline" class="section hidden">
+      <div class="content">
+        <h2>Nossa Jornada Juntas</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Primeiros Passos</h3>
+              <p>Você segurou minhas mãos quando dei meus primeiros passos. Sua paciência e amor me deram coragem para explorar o mundo.</p>
+              <div class="timeline-image">
+                <img src="https://images.pexels.com/photos/1620424/pexels-photo-1620424.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mãe e bebê">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Infância Colorida</h3>
+              <p>Você transformou minha infância em um arco-íris de momentos felizes. Cada risada, cada abraço, cada história antes de dormir.</p>
+              <div class="timeline-image">
+                <img src="https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mãe e criança brincando">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Anos de Crescimento</h3>
+              <p>Mesmo nos momentos difíceis da adolescência, você estava lá - um porto seguro, uma conselheira, uma amiga.</p>
+              <div class="timeline-image">
+                <img src="https://images.pexels.com/photos/8880449/pexels-photo-8880449.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mãe e adolescente conversando">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Conquistas Juntas</h3>
+              <p>Cada vitória minha sempre foi nossa. Seu apoio incondicional me deu asas para voar e raízes para voltar.</p>
+              <div class="timeline-image">
+                <img src="https://images.pexels.com/photos/7319156/pexels-photo-7319156.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Mãe e filho(a) celebrando">
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-next" data-next="gallery">Continuar</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="section hidden">
+      <div class="content">
+        <h2>Memórias Especiais</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/4149035/pexels-photo-4149035.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 1">
+              <div class="photo-caption">Nossos sorrisos juntas</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 2">
+              <div class="photo-caption">Seus abraços que curam tudo</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/4064174/pexels-photo-4064174.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 3">
+              <div class="photo-caption">Nossas aventuras</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/2253879/pexels-photo-2253879.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 4">
+              <div class="photo-caption">Momentos de carinho</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/3979176/pexels-photo-3979176.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 5">
+              <div class="photo-caption">Celebrando a vida</div>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="photo-frame">
+              <img src="https://images.pexels.com/photos/5799788/pexels-photo-5799788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Momento especial 6">
+              <div class="photo-caption">Momentos de paz</div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-next" data-next="final">Continuar</button>
+      </div>
+    </section>
+
+    <section id="final" class="section hidden">
+      <div class="content">
+        <h2>De Todo Coração</h2>
+        <div class="final-message">
+          <p>Mãe, você é o maior presente que a vida poderia me dar.</p>
+          <p>Seu amor me ensinou a amar, sua força me ensinou a ser forte, sua bondade me ensinou a ser bondoso.</p>
+          <p>Por tudo que você é e por tudo que faz, obrigado(a).</p>
+        </div>
+        <button id="love-button" class="love-button">Te amo, Mãe 💖</button>
+        <div id="surprise-message" class="surprise-message hidden">
+          <p>Você é meu exemplo, minha inspiração e meu eterno amor.</p>
+          <p>Feliz Dia das Mães!</p>
+          <p>Hoje e sempre, meu coração é seu.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <audio id="bgMusic" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_d1a6511138.mp3?filename=peaceful-piano-113397.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/timeline.js"></script>
+  <script src="scripts/gallery.js"></script>
+  <script src="scripts/animations.js"></script>
+  <script src="scripts/audio.js"></script>
+</body>
+</html>

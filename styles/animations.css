@@ -1,0 +1,134 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-150px) rotate(var(--rotation));
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-300px) rotate(var(--rotation));
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 10px 20px rgba(255, 123, 172, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 123, 172, 0.6);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 10px 20px rgba(255, 123, 172, 0.4);
+  }
+}
+
+@keyframes bloom {
+  0% {
+    transform: scale(0) rotate(var(--rotation));
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1) rotate(var(--rotation));
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(var(--rotation));
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.section.active {
+  display: flex;
+  animation: fadeIn 1s ease-out;
+}
+
+.hearts-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.heart {
+  position: absolute;
+  bottom: -50px;
+  background-color: var(--color-pink);
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  transform: rotate(-45deg);
+  opacity: 0;
+  animation: floatHeart var(--duration) linear forwards;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  background-color: var(--color-pink);
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart::before {
+  top: -15px;
+  left: 0;
+}
+
+.heart::after {
+  left: 15px;
+  top: 0;
+}
+
+.love-button.pulsing {
+  animation: pulse 1.5s infinite;
+}
+
+.bloom-animation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloom {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  animation: bloom var(--duration) ease-out forwards;
+}
